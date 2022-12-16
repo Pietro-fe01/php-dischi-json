@@ -5,6 +5,7 @@ createApp({
         return {
             vinylLists: [],
             songTitle: '',
+            searchBar: false
         }
     },
     methods: {
@@ -34,6 +35,12 @@ createApp({
                 });
             } else {
                 this.searchInAPI();
+            }
+        },
+        openSearchBar(){
+            this.searchBar = !this.searchBar;
+            if(!this.searchBar){
+                return this.$refs.searchInput.focus();
             }
         }
     },

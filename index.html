@@ -24,9 +24,9 @@
                         <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Spotify_icon.svg/991px-Spotify_icon.svg.png" alt="">
                     </a>
                 </div>
-                <form action="">
-                    <input type="text" placeholder="Cerca canzone per titolo" name="song_name" @keyup="searchByName" v-model="songTitle">
-                    <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <form action="" @submit.prevent>
+                    <input :class="{invisible : searchBar}" type="text" placeholder="Cerca canzone per titolo" name="song_name" @keyup="searchByName" v-model="songTitle" ref="searchInput" autofocus>
+                    <button :class="{'change-color' : !searchBar}" type="submit" @click="openSearchBar"><i class="fa-solid fa-magnifying-glass"></i></button>
                 </form>
                 <div></div>
             </header>
