@@ -36,19 +36,21 @@ header img{
     MAIN
 ----------------------*/
 main {
-    margin-top: 30px;
+    margin-top: 40px;
 }
 
 .vinyls-container{
     display: flex;
+    flex-wrap: wrap;
 }
 
 .vinyl{
     width: calc(100% / 3 - 80px);
     background-color: #112030;
     text-align: center;
-    padding: 25px 50px;
+    padding: 25px 40px;
     margin: 0 40px;
+    margin-bottom: 3.125rem;
 }
 
 .vinyl .vinyl__image{
