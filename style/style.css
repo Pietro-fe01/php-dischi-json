@@ -107,6 +107,7 @@ main {
     margin-bottom: 3.125rem;
     border-radius: 10px;
     transition: transform 0.3s;
+    filter: drop-shadow(0 0 5px black);
 }
 
 .vinyl:hover{

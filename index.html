@@ -25,7 +25,16 @@
                     </a>
                 </div>
                 <form action="" @submit.prevent>
-                    <input :class="{invisible : searchBar}" type="text" placeholder="Cerca canzone per titolo" name="song_name" @keyup="searchByName" v-model="songTitle" ref="searchInput" autofocus>
+                    <input 
+                    :class="{invisible : searchBar}"
+                    :disabled="searchBar"
+                    type="text" 
+                    placeholder="Cerca canzone per titolo" 
+                    name="song_name" 
+                    @keyup="searchByName" 
+                    v-model="songTitle" 
+                    ref="searchInput" 
+                    autofocus>
                     <button :class="{'change-color' : !searchBar}" type="submit" @click="openSearchBar"><i class="fa-solid fa-magnifying-glass"></i></button>
                 </form>
                 <div></div>
