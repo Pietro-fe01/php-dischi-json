@@ -11,6 +11,9 @@
         <!-- Vuejs CDN -->
             <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
         <!-- /Vuejs CDN -->
+        <!-- Fontawesome CDN -->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- /Fontawesome CDN -->
         <link rel="stylesheet" href="style/style.css">
     </head>
     <body>
@@ -23,7 +26,7 @@
                 </div>
                 <form action="">
                     <input type="text" placeholder="Cerca canzone per titolo" name="song_name" @keyup="searchByName" v-model="songTitle">
-                    <button type="submit">Cerca</button>
+                    <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
                 </form>
                 <div></div>
             </header>

@@ -40,6 +40,28 @@ header{
 header img{
     width: 50px;
 }
+header form input{
+    padding: 10px 20px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+header form input:focus{
+    outline: none;
+}
+
+header form input::placeholder{
+    color: black;
+    text-decoration: underline;
+}
+
+header form button{
+    padding: 11px 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
 
 /*---------------------
     MAIN
