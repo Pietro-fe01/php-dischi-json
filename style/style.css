@@ -7,3 +7,64 @@
     padding: 0;
 }
 
+body{
+    background-color: #1d2d3c;
+}
+
+/*---------------------
+    COMMONS
+----------------------*/
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/*---------------------
+    HEADER
+----------------------*/
+header{
+    background-color: #06131f;
+    padding: .9375rem 6.25rem;
+}
+
+header img{
+    width: 50px;
+}
+
+/*---------------------
+    MAIN
+----------------------*/
+main {
+    margin-top: 30px;
+}
+
+.vinyls-container{
+    display: flex;
+}
+
+.vinyl{
+    width: calc(100% / 3 - 80px);
+    background-color: #112030;
+    text-align: center;
+    padding: 25px 50px;
+    margin: 0 40px;
+}
+
+.vinyl .vinyl__image{
+    margin-bottom: 15px;
+}
+
+.vinyl .vinyl__image img{
+    width: 230px;
+    height: 230px;
+}
+
+.vinyl .vinyl__info{
+    color: white;
+}
+
+.vinyl .vinyl__info .vinyl__author{
+    margin: 8px 0;
+    display: inline-block;
+}
