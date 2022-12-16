@@ -51,6 +51,12 @@ main {
     padding: 25px 40px;
     margin: 0 40px;
     margin-bottom: 3.125rem;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.vinyl:hover{
+    transform: scale(1.1);
 }
 
 .vinyl .vinyl__image{
